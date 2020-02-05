@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Hydraapp</title>
-    <meta name="description" content="Nice app." />
+    <title>BottleApp</title>
+    <meta name="description" content="Count your glasses of water." />
 
-    <meta property="og:title" content="Hydraapp" />
+    <meta property="og:title" content="BottleApp" />
     <meta
       property="og:description"
       content="Simple app for calculating drunk glasses of water per day."
@@ -23,19 +23,50 @@
     <link
       rel="apple-touch-icon"
       sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
+      href="../assets/pwa/icons/icon-192x192.png"
     />
 
     <link
       rel="icon"
       type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
+      href="../assets/pwa/icons/icon-192x192.png"
     />
 
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
-    <h1>Hello world</h1>
+  <body class="body">
+    <main class="main">
+      <header class="header">
+        <h1 class="header__title">BottleApp</h1>
+      </header>
+
+      <section class="picture">
+        <img
+          src="../assets/svg/water-glass.svg"
+          alt="Glass of water."
+          class="picture__glass"
+        />
+        <img
+          src="../assets/svg/water.svg"
+          alt="water."
+          class="picture__water"
+        />
+        <p class="picture__counter picture__counter--js">0</p>
+      </section>
+
+      <section class="actions">
+        <button
+          class="actions__button actions__button--add actions__button--add--js"
+        >
+          Add
+        </button>
+        <button
+          class="actions__button actions__button--remove actions__button--add--js"
+        >
+          Remove
+        </button>
+      </section>
+    </main>
 
     <script src="js/main.js"></script>
   </body>
