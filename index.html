@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BottleApp</title>
+    <meta name="description" content="Count your glasses of water." />
+
+    <meta property="og:title" content="BottleApp" />
+    <meta
+      property="og:description"
+      content="Simple app for calculating drunk glasses of water per day."
+    />
+    <meta property="og:url" content="https://muczos94.github.io/hydraapp/" />
+    <meta
+      property="og:image"
+      content="https://muczos94.github.io/hydraapp/assets/img/cover.png"
+    />
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="../assets/pwa/icons/icon-192x192.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/pwa/icons/icon-192x192.png"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="body">
+    <main class="main">
+      <h1 class="heading">hydrapp</h1>
+
+      <div class="counter">
+        <p class="counter__value counter__value--js">0</p>
+      </div>
+
+      <button class="button-add button-add--js">
+        dodaj szklanke
+      </button>
+      <button class="button-remove button-add--js">
+        usuń szklankę
+      </button>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
